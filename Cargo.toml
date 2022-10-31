@@ -2,6 +2,14 @@
 name = "nvidia_riva"
 version = "0.1.0"
 edition = "2021"
+authors = ["Aleksei Bogdanov <abo@datacorp.ee>"]
+categories = ["grpc-client", "network-programming"]
+keywords = ["client", "grpc", "riva", "jarvis"]
+readme = "README.md"
+homepage = "https://github.com/jettycloud/nvidia-riva-rs"
+repository = "https://github.com/jettycloud/nvidia-riva-rs"
+description = "The rust language implementation of gRPC client for nvidia riva."
+license = "Apache-2.0/MIT"
 
 [dependencies]
 anyhow = "1.0"
