@@ -1,7 +1,5 @@
-use nvidia_riva::asr::{
-    riva_speech_recognition_client::RivaSpeechRecognitionClient, RecognitionConfig,
-    RecognizeRequest,
-};
+use nvidia_riva::asr::riva_speech_recognition_client::RivaSpeechRecognitionClient;
+use nvidia_riva::asr::{RecognitionConfig, RecognizeRequest};
 use nvidia_riva::AudioEncoding;
 
 #[tokio::main]

@@ -1,5 +1,5 @@
-
 [![Rust](https://github.com/jettycloud/nvidia-riva-rs/workflows/Rust/badge.svg)](https://github.com/jettycloud/nvidia-riva-rs/actions?query=workflow%3ARust)
+
 # GRPC Client for Nvidia Riva or Jarvis
 
 ### How to install
@@ -17,17 +17,17 @@ nvidia_riva = 0.1
 #### Example for RivaSpeechRecognitionClient
 
 ```rust
-use nvidia_riva::asr::{
-    riva_speech_recognition_client::RivaSpeechRecognitionClient, RecognitionConfig,
-    RecognizeRequest,
-};
+use nvidia_riva::asr::riva_speech_recognition_client::RivaSpeechRecognitionClient;
+use nvidia_riva::asr::{RecognitionConfig, RecognizeRequest};
 use nvidia_riva::AudioEncoding;
 
 #[tokio::main]
 async fn main() -> Result<(), anyhow::Error> {
-    let mut riva_client = RivaSpeechRecognitionClient::connect("http://127.0.0.1:50051").await?;
+    let mut riva_client =
+        RivaSpeechRecognitionClient::connect("http://127.0.0.1:50051").await?;
 
-    let bytes = std::fs::read("./assets/data/test.wav").expect("Unable read `test.wav` file");
+    let bytes = std::fs::read("./assets/data/test.wav")
+        .expect("Unable read `test.wav` file");
     let riva_request = RecognizeRequest {
         config: Some(RecognitionConfig {
             encoding: AudioEncoding::LinearPcm as i32,
