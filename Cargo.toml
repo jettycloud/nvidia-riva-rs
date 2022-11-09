@@ -1,8 +1,8 @@
 [package]
 name = "nvidia_riva"
-version = "0.1.0"
-authors = ["Aleksei Bogdanov <abo@datacorp.ee>"]
-categories = ["grpc-client", "network-programming"]
+version = "0.1.1"
+authors = ["Aleksei Bogdanov <abo@datacorp.ee>", "Aleksei Sidorov sauron1987@gmail.com" ]
+categories = ["network-programming"]
 edition = "2021"
 homepage = "https://github.com/jettycloud/nvidia-riva-rs"
 keywords = ["client", "grpc", "riva", "jarvis"]
@@ -12,12 +12,13 @@ repository = "https://github.com/jettycloud/nvidia-riva-rs"
 description = "The rust language implementation of gRPC client for nvidia riva."
 
 [dependencies]
-anyhow = "1.0"
 prost = "0.11"
 prost-types = "0.11"
-tokio = { version = "1.20", features = ["time", "test-util", "fs", "macros", "sync", "rt-multi-thread"] }
 tonic = "0.8"
 
-[build-dependencies]
+[dev-dependencies]
 anyhow = "1.0"
+tokio = { version = "1.20", features = ["time", "test-util", "fs", "macros", "sync", "rt-multi-thread"] }
+
+[build-dependencies]
 tonic-build = "0.8"

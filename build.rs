@@ -1,12 +1,10 @@
-use std::path::PathBuf;
-
 fn main() {
     tonic_build::configure()
-        .out_dir(default_proto_dir().unwrap())
         .type_attribute(
             ".",
             "#[allow(unknown_lints, clippy::derive_partial_eq_without_eq)]",
         )
+        .include_file("generated.rs")
         .compile(
             &[
                 "api/common/riva/proto/health.proto",
@@ -19,10 +17,4 @@ fn main() {
             &["api/common/"],
         )
         .unwrap();
-}
-
-pub fn default_proto_dir() -> anyhow::Result<PathBuf> {
-    let dir = format!("{}/target", std::env::var("CARGO_MANIFEST_DIR")?).into();
-    std::fs::create_dir_all(&dir)?;
-    Ok(dir)
 }
