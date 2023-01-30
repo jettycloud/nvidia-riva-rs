@@ -1,4 +1,6 @@
 [![Rust](https://github.com/jettycloud/nvidia-riva-rs/workflows/Rust/badge.svg)](https://github.com/jettycloud/nvidia-riva-rs/actions?query=workflow%3ARust)
+[![Documentation](https://docs.rs/nvidia_riva/badge.svg)](https://docs.rs/nvidia_riva)
+[![Crates.io](https://img.shields.io/crates/v/nvidia_riva.svg)](https://crates.io/crates/nvidia_riva)
 
 # GRPC Client for Nvidia Riva or Jarvis
 
