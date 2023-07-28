@@ -1,7 +1,10 @@
 [package]
 name = "nvidia_riva"
-version = "0.1.2"
-authors = ["Aleksei Bogdanov <abo@datacorp.ee>", "Aleksei Sidorov <sauron1987@gmail.com>" ]
+version = "0.2.0"
+authors = [
+    "Aleksei Bogdanov <abo@datacorp.ee>",
+    "Aleksei Sidorov <sauron1987@gmail.com>"
+]
 categories = ["network-programming"]
 edition = "2021"
 homepage = "https://github.com/jettycloud/nvidia-riva-rs"

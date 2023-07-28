@@ -11,7 +11,7 @@ Add `nvidia_riva` to your dependencies
 ```toml
 [dependencies]
 # ...
-nvidia_riva = 0.1
+nvidia_riva = 0.2
 ```
 
 ### Getting started
