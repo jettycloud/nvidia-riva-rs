@@ -1,7 +1,7 @@
 [package]
 name = "nvidia_riva"
 version = "0.1.1"
-authors = ["Aleksei Bogdanov <abo@datacorp.ee>", "Aleksei Sidorov sauron1987@gmail.com" ]
+authors = ["Aleksei Bogdanov <abo@datacorp.ee>", "Aleksei Sidorov <sauron1987@gmail.com>" ]
 categories = ["network-programming"]
 edition = "2021"
 homepage = "https://github.com/jettycloud/nvidia-riva-rs"
@@ -14,11 +14,11 @@ description = "The rust language implementation of gRPC client for nvidia riva."
 [dependencies]
 prost = "0.11"
 prost-types = "0.11"
-tonic = "0.8"
+tonic = "0.9"
 
 [dev-dependencies]
 anyhow = "1.0"
 tokio = { version = "1.20", features = ["time", "test-util", "fs", "macros", "sync", "rt-multi-thread"] }
 
 [build-dependencies]
-tonic-build = "0.8"
+tonic-build = "0.9"
